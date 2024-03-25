@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>732106868103-i2p8brqo1ikme4ger1bslprlo2gn8bje.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.732106868103-i2p8brqo1ikme4ger1bslprlo2gn8bje</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAd3QEy_ZuJlSxzyEjjiZ3yEskS99bEc1E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>732106868103</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Example.Liverpool</string>
+	<key>PROJECT_ID</key>
+	<string>livtest-dfa2e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>livtest-dfa2e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:732106868103:ios:fca95f61cedc89e531bf22</string>
+</dict>
+</plist>
