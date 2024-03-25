@@ -18,6 +18,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginNViewController" customModule="ContriesPrueba" customModuleProvider="target">
             <connections>
+                <outlet property="BtnAuthGoogle" destination="x18-ln-E5x" id="veC-ba-USB"/>
+                <outlet property="BtnAvanzar" destination="dSC-Ls-TFE" id="314-kJ-JhK"/>
+                <outlet property="EmailTextField" destination="HpZ-hM-Vuz" id="TRg-8o-SG4"/>
+                <outlet property="ImageWelcome" destination="9cd-2J-fiy" id="bbZ-pA-yEr"/>
+                <outlet property="checkBox" destination="add-sK-C3z" id="NGL-1s-cMX"/>
+                <outlet property="passwordTextField" destination="2dG-Ly-zFp" id="afS-Kh-bhu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -83,17 +89,18 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QJU-RZ-y5b">
-                                            <rect key="frame" x="0.0" y="430" width="367" height="30"/>
+                                            <rect key="frame" x="0.0" y="430" width="367" height="14"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AHT-fA-izQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="add-sK-C3z">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="14"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="AHT-fA-izQ" secondAttribute="height" multiplier="1:1" id="fJD-eS-2di"/>
-                                                        <constraint firstAttribute="width" constant="30" id="iCR-bT-tnf"/>
+                                                        <constraint firstAttribute="width" constant="30" id="7HS-kJ-AP0"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recordar mi cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le4-sm-JUk">
-                                                    <rect key="frame" x="38" y="0.0" width="329" height="30"/>
+                                                    <rect key="frame" x="38" y="0.0" width="329" height="14"/>
                                                     <fontDescription key="fontDescription" name="SpaceGrotesk-Regular" family="Space Grotesk" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -101,21 +108,24 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSC-Ls-TFE">
-                                            <rect key="frame" x="0.0" y="492" width="367" height="36"/>
+                                            <rect key="frame" x="0.0" y="476" width="367" height="36"/>
                                             <color key="backgroundColor" systemColor="linkColor"/>
                                             <fontDescription key="fontDescription" name="SpaceGrotesk-Bold" family="Space Grotesk" pointSize="20"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Avanzar">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="LoginButtonPress:" destination="-1" eventType="touchUpInside" id="JYo-ab-WLF"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Olvidaste tu contraseña?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWx-6O-lMQ">
-                                            <rect key="frame" x="0.0" y="560" width="367" height="17.666666666666629"/>
+                                            <rect key="frame" x="0.0" y="544" width="367" height="17.666666666666629"/>
                                             <fontDescription key="fontDescription" name="SpaceGrotesk-Regular" family="Space Grotesk" pointSize="15"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRQ-Kq-KUn">
-                                            <rect key="frame" x="0.0" y="609.66666666666663" width="367" height="50"/>
+                                            <rect key="frame" x="0.0" y="593.66666666666663" width="367" height="66"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0d3-4T-ep1">
                                                     <rect key="frame" x="0.0" y="0.0" width="367" height="1"/>
@@ -147,14 +157,14 @@
                                             <rect key="frame" x="0.0" y="691.66666666666663" width="367" height="288"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x18-ln-E5x">
-                                                    <rect key="frame" x="146" y="40" width="75" height="34.333333333333343"/>
+                                                    <rect key="frame" x="146" y="10" width="75" height="34.333333333333336"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="x18-ln-E5x" firstAttribute="leading" secondItem="txq-vb-eKO" secondAttribute="leading" constant="146" id="8R2-xl-CvL"/>
-                                                <constraint firstItem="x18-ln-E5x" firstAttribute="top" secondItem="txq-vb-eKO" secondAttribute="top" constant="40" id="p9I-RI-Mia"/>
+                                                <constraint firstItem="x18-ln-E5x" firstAttribute="top" secondItem="txq-vb-eKO" secondAttribute="top" constant="10" id="mpl-G4-XaF"/>
                                                 <constraint firstAttribute="trailing" secondItem="x18-ln-E5x" secondAttribute="trailing" constant="146" id="ptA-Hq-9DQ"/>
                                             </constraints>
                                         </view>
